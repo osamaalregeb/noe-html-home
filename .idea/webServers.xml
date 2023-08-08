@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ebc2be72-8013-478e-826b-733a1f63ad42" name="alnaimi" url="http://alnaimistudios.com">
+        <fileTransfer rootFolder="/domains/alnaimistudios.com/public_html" host="alnaimistudios.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

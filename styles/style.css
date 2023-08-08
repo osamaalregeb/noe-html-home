@@ -1,0 +1,30 @@
+body {
+    background: linear-gradient(to bottom, #9047f0 0%, #371752 100%);
+}
+
+.stName {
+    font-weight: bold;
+    align-self: center;
+    color: white;
+    padding: 0px 10px;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.stName span{
+    transition: all 0.5s;
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+}
+.text-gradient {
+     /* Set the background color */
+     background: linear-gradient(to right, #b70000 3%, #000000 100%);
+     /* Mask the color to the text, and remove the rest  */
+     -webkit-background-clip: text;
+     /* Make the text fill color value transparent so the masked background color comes through */
+     -webkit-text-fill-color: transparent;
+ }
