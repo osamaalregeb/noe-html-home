@@ -1,11 +1,11 @@
 body {
-    background: linear-gradient(to bottom, #9047f0 0%, #371752 100%);
+    background: linear-gradient(to bottom, #000033 0%, #000080 100%);
 }
 
 .stName {
-    font-weight: bold;
+    font-weight: lighter;
     align-self: center;
-    color: white;
+    color: #F5F5F5;
     padding: 0px 10px;
     text-align: center;
     width: fit-content;
@@ -14,11 +14,17 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
+@keyframes glow {
+    0% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000; }
+    100% { text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000; }
+}
+
 .stName span{
     transition: all 0.5s;
     display: block;
     font-size: 3em;
     font-weight: bold;
+    animation: glow 2s ease-in-out infinite alternate;
 }
 .text-gradient {
      /* Set the background color */
@@ -27,4 +33,15 @@ body {
      -webkit-background-clip: text;
      /* Make the text fill color value transparent so the masked background color comes through */
      -webkit-text-fill-color: transparent;
+ }
+
+ .stars::before, .stars::after {
+     content: "";
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: transparent url(correct_path_to_stars.png) repeat 0 0;
+     z-index: 1;
  }
