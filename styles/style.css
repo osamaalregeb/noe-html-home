@@ -14,6 +14,11 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
+@keyframes glow {
+    0% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000; }
+    100% { text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000; }
+}
+
 .stName span{
     transition: all 0.5s;
     display: block;
@@ -31,12 +36,12 @@ body {
  }
 
  .stars::before, .stars::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: transparent url(stars.png) repeat 0 0;
-    z-index: 1;
-}
+     content: "";
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: transparent url(correct_path_to_stars.png) repeat 0 0;
+     z-index: 1;
+ }
